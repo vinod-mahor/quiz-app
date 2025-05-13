@@ -122,6 +122,8 @@ i{
  overflow-y: scroll;
 }
 .question-solutions{
+  position: relative;
+  bottom:4rem;
   display: flex;
   max-height: 10rem;
   justify-content: center;
