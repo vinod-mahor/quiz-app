@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+i{
+  margin: auto 4px;
+}
+.quiz-main-container {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-box {
+  position: relative;
+  height: 70vh;
+  background-color: #fff;
+  width: 50vw;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  /* overflow: hidden; */
+}
+
+.question-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #c2c2c2;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+}
+
+.question-text{
+    padding: 2rem;
+    height: 10rem;
+    width: 100%;
+    
+    
+}
+.question-options{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.option{
+  text-align: left;
+}
+.option > span{
+  text-align: left !important;
+}
+.option-row-1,.option-row-2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.option-row-1 >.btn,.option-row-2 >.btn {
+  width: 45%;
+}
+
+.navigation{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #ebeaea;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.active{
+  background-color: #083881 !important;
+  color:rgb(255, 255, 255) !important;
+}
+
+.result-box{
+  height:80vh ;
+  width: 70vw;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem ;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  display: none;
+  overflow-y: hidden;
+}
+.table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.result-nav{
+  height: 2rem;
+  width: 100%;
+}
+.table{
+  height: 100%;
+  width: 100%;
+ overflow-y: scroll;
+}
+.question-solutions{
+  display: flex;
+  max-height: 10rem;
+  justify-content: center;
+  overflow-y: scroll;
+  /* background-color: green; */
+  margin: 1rem 0.5rem;
+}
+
+.start-box{
+  height: 70vh;
+  width: 50vw;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.start-para{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
