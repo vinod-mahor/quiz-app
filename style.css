@@ -234,10 +234,13 @@ td {
     align-content: space-evenly;
   }
   .result-box {
-    width: 80%;
+    max-width: 90%;
+    width: 90%;
     flex-direction: column;
     align-content: space-between;
     position: relative;
+    padding: 0.7rem;
+    overflow-x: hidden;
   }
   .result-heading > h1 {
     font-size: 0.9em;
@@ -250,17 +253,19 @@ td {
     font-size: 0.9em;
   }
   table {
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
   .result-nav {
     position: absolute;
     bottom: 3rem;
-    width: 75%;
+    width: 60%;
   }
   .question-solutions {
+    display: flex;
+    justify-content: center;
     position: relative;
     top: 1rem;
-    width: 100%;
+    width: 90%;
     max-height: 60%;
     height: 50%;
   }
@@ -277,7 +282,20 @@ td {
   .restart-btn {
     font-size: 0.8em;
   }
-  table{
-    table-layout: auto;
+  table {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  td,
+  th {
+    min-width: none;
+    padding: 2px;
+    min-width: none;
+    box-sizing: border-box;
+
+  }
+  .result-nav {
+    height: 2rem;
+    width: 100%;
   }
 }
