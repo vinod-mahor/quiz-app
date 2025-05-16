@@ -151,9 +151,18 @@ td {
   text-align: center;
   margin-bottom: 2rem;
 }
+.devName {
+  position: absolute;
+  bottom: 0;
+  color: rgb(161, 161, 161);
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
 
 @media only screen and (max-width: 600px) {
-  .quiz-main-container{
+  .quiz-main-container {
     max-height: 100vh;
     height: 100vh;
     width: 100vw;
@@ -162,7 +171,7 @@ td {
     align-items: center;
     justify-content: center;
   }
-  body{
+  body {
     max-width: 100vw;
     max-height: 100vh;
   }
@@ -229,33 +238,32 @@ td {
     flex-direction: column;
     align-content: space-between;
     position: relative;
-
   }
   .result-heading > h1 {
     font-size: 0.9em;
   }
- 
+
   .score-details > h2 {
     font-size: 0.8em;
   }
   .score-details > h3 {
     font-size: 0.9em;
   }
-  table{
+  table {
     font-size: 0.7em;
   }
-  .result-nav{
+  .result-nav {
     position: absolute;
     bottom: 3rem;
     width: 75%;
   }
-  .question-solutions{
+  .question-solutions {
     position: relative;
     top: 1rem;
-    max-height:60% ;
+    max-height: 60%;
     height: 50%;
   }
-  .devName{
+  .devName {
     font-size: small;
     position: absolute;
     bottom: 0;
@@ -265,7 +273,7 @@ td {
     box-sizing: border-box;
     text-align: center;
   }
-  .restart-btn{
+  .restart-btn {
     font-size: 0.8em;
   }
 }
